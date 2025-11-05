@@ -1,10 +1,12 @@
-import json, time, websocket, threading
+import json, time, websocket, threading, os
+from dotenv import load_dotenv
 
-FINNHUB_TOKEN = "YOUR_TOKEN_HERE"  # 🔒 replace with your real Finnhub API token
+load_dotenv()
+FINNHUB_TOKEN = os.getenv("FINNHUB_TOKEN")  # reads from your environment
 TICKERS = [
-    "AAPL","MSFT","NVDA","TSLA","AMZN","META","GOOGL","NFLX","AMD","INTC",
-    "BABA","ADBE","CRM","PYPL","QCOM","ORCL","CSCO","SPY","QQQ","SHOP",
-    "SQ","NKE","PINS","BA","UBER","COIN","SNOW","TWLO","PLTR","ROKU"
+    "BINANCE:BTCUSDT", "BINANCE:ETHUSDT", "BINANCE:SOLUSDT",
+    "BINANCE:BNBUSDT", "BINANCE:ADAUSDT", "BINANCE:XRPUSDT",
+    "AAPL", "MSFT", "TSLA", "AMZN"
 ]
 
 count = 0

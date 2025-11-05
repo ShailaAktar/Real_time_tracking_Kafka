@@ -12,6 +12,9 @@ start_time = None
 def on_message(ws, message):
     global msg_count
     msg_count += 1
+    data = json.loads(message)
+    print(json.dumps(data, indent=2))
+
 
 def on_open(ws):
     global start_time
@@ -21,15 +24,6 @@ def on_open(ws):
         "type": "subscribe",
         "product_ids": [
   "BTC-USD",
-  "ETH-USD",
-  "SOL-USD",
-  "ADA-USD",
-  "XRP-USD",
-  "DOGE-USD",
-  "LTC-USD",
-  "AVAX-USD",
-  "DOT-USD",
-  "LINK-USD"
 ],
         "channels": ["ticker"]
     }
