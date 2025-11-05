@@ -13,6 +13,10 @@ build/
 *.out
 *.tmp
 
+# Ignore Kafka binaries
+kafka_2.13-4.1.0/
+kafka_2.13-4.1.0.tgz
+
 # ---- Virtual Environments ----
 venv/
 env/

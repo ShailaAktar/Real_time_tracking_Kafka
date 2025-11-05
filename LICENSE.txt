@@ -1,0 +1,13 @@
+Copyright (c) 2025 Sultan Alzoghaibi
+All rights reserved.
+
+Permission to use, copy, modify, distribute, or sell this software, in whole or in part,
+for any purpose is hereby expressly denied.
+
+This software is provided "AS IS" without warranty of any kind. The author(s) disclaim
+all liability for damages arising from the use or inability to use this software.
+
+If you wish to obtain permission to use this software, you must contact the copyright
+holder in writing and receive explicit authorization.
+
+DO NOT USE — This repository and its contents are proprietary.

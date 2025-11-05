@@ -1,0 +1,16 @@
+
+
+Java 21.0.9
+
+Kafka 4.1.0
+https://dlcdn.apache.org/kafka/4.1.0/kafka_2.13-4.1.0.tgz
+
+
+
+
+🪵 Kafka Setup (Bare Metal):
+	•	Extract kafka_2.13-4.1.0.tgz
+	•	Start ZooKeeper
+	•	Start Kafka broker
+	•	Create topics crypto and stocks
+	•	Add producer retry logic: retries=5
