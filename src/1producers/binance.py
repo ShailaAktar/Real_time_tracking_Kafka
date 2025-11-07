@@ -22,6 +22,9 @@ start_time = None
 def on_message(ws, message):
     global msg_count
     msg_count += 1
+
+    if msg_count % 100 == 0:
+        print(json.dumps(json.loads(message), indent=2))
     # Uncomment to see messages:
     # print(json.dumps(json.loads(message), indent=2))
 
@@ -39,7 +42,7 @@ def main():
     ws = websocket.WebSocketApp(
         FULL_SOCKET_URL,
         on_open=on_open,
-        on_message=on_message,
+    on_message=on_message,
         on_close=on_close
     )
 
@@ -50,7 +53,7 @@ def main():
     thread.start()
 
     # Let it run for 10 seconds
-    time.sleep(10)
+    time.sleep(1)
     ws.close()
 
 if __name__ == "__main__":

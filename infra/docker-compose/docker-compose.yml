@@ -9,7 +9,7 @@ services:
 
   kafka:
     image: confluentinc/cp-kafka:7.6.1
-    container_name: kafka
+    container_name: 2kafka
     ports:
       - "9092:9092"
     environment:
@@ -20,4 +20,4 @@ services:
     depends_on:
       - zookeeper
 
-# this does not make 100 sense to have kafka liek this stateless = L
+# this does not make 100 sense to have 2kafka liek this stateless = L

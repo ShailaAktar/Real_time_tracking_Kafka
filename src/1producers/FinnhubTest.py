@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 FINNHUB_TOKEN = os.getenv("FINNHUB_TOKEN")  # reads from your environment
 TICKERS = [
-    "BINANCE:BTCUSDT", "BINANCE:ETHUSDT", "BINANCE:SOLUSDT",
-    "BINANCE:BNBUSDT", "BINANCE:ADAUSDT", "BINANCE:XRPUSDT",
+
     "AAPL", "MSFT", "TSLA", "AMZN"
 ]
 
