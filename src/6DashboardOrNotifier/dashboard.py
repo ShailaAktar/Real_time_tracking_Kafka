@@ -114,12 +114,17 @@ app.layout = html.Div(
             n_intervals=0,
         ),
     ],
+
+    
 )
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 1a457ea29c40b961743aee44d78a2c9d8ea0d958
 @app.callback(
     Output("points-label", "children"),
     Input("points-slider", "value"),
@@ -189,5 +194,8 @@ def update_chart(selected_symbol, n_points, n_intervals):
 if __name__ == "__main__":
     # debug=False → hides the Dash dev toolbar at the bottom
     app.run(debug=False)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1a457ea29c40b961743aee44d78a2c9d8ea0d958
