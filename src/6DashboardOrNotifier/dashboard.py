@@ -117,6 +117,9 @@ app.layout = html.Div(
 )
 
 
+
+
+
 @app.callback(
     Output("points-label", "children"),
     Input("points-slider", "value"),
