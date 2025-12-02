@@ -49,9 +49,10 @@ def fetch_trades(symbol: str, limit: int = 200) -> pd.DataFrame:
         conn.close()
 
     if not df.empty:
-        df["trade_time"] = pd.to_datetime(df["trade_time"])
-        # we want time moving forward on the x-axis
+
+        df["trade_time"] = pd.to_datetime(df["trade_time"], unit="ms", utc=True)
         df = df.sort_values("trade_time")
+
 
     return df
 
